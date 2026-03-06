@@ -1,0 +1,24 @@
+[package]
+name = "berm-cover-engine"
+description = "Parametric trigger engine and keeper for the Berm cover protocol (5 cover types)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+
+[lib]
+name = "berm_cover_engine"
+path = "src/lib.rs"
+
+[[bin]]
+name = "berm-keeper"
+path = "src/bin/berm-keeper.rs"
+
+[dependencies]
+berm-oracle-adapter = { path = "../oracle-adapter" }
+berm-risk-underwriter = { path = "../risk-underwriter" }
+thiserror = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+sha2 = { workspace = true }
