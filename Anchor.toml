@@ -1,0 +1,29 @@
+[toolchain]
+anchor_version = "0.31.1"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.devnet]
+berm_claim_resolver = "GnS9Sii7PpELXQLyKwZRgrEpqma3GQwcSxtqNdCMmkk3"
+berm_cover = "AMenBCW8sgtx2VriEYzdJkTCsUBF6FGQy8PhcNh9p7pH"
+berm_pool_vault = "H4ifx5HYeHHvEuyJMdF1EpRSeNZJqRf3Vkhi4LT8N12T"
+
+[programs.mainnet]
+berm_claim_resolver = "GnS9Sii7PpELXQLyKwZRgrEpqma3GQwcSxtqNdCMmkk3"
+berm_cover = "AMenBCW8sgtx2VriEYzdJkTCsUBF6FGQy8PhcNh9p7pH"
+berm_pool_vault = "H4ifx5HYeHHvEuyJMdF1EpRSeNZJqRf3Vkhi4LT8N12T"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/ttat/berm-deploy.json"
+
+[workspace]
+members = ["packages/anchor-program", "packages/pool-vault", "packages/claim-resolver"]
+
+[scripts]
+test = "echo 'Use cargo test for the off-chain crates; anchor test for on-chain integration.'"

@@ -1,0 +1,42 @@
+[workspace]
+resolver = "2"
+members = [
+    "packages/oracle-adapter",
+    "packages/risk-underwriter",
+    "packages/cover-engine",
+    "packages/pool-vault",
+    "packages/anchor-program",
+    "packages/claim-resolver",
+]
+
+# The remaining monorepo packages (sdk-ts, cli, mobile-app) are TypeScript /
+# React Native workspaces and are managed by the JavaScript toolchain, not Cargo.
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+repository = "https://github.com/berm-labs/berm"
+authors = ["Berm Labs"]
+
+[workspace.dependencies]
+# On-chain (Anchor 0.31 / Solana mainnet)
+anchor-lang = { version = "0.31.1", features = ["init-if-needed"] }
+anchor-spl = { version = "0.31.1", features = ["token_2022"] }
+switchboard-on-demand = "0.10.8"
+
+# Off-chain engine
+pyth-sdk = "0.8"
+sha2 = "0.10"
+thiserror = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[profile.release]
+overflow-checks = true
+lto = "fat"
+codegen-units = 1
+
+[profile.release.build-override]
+opt-level = 3
+incremental = false

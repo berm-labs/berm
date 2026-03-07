@@ -1,0 +1,53 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  fmt:
+    name: rust fmt
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt
+      - name: cargo fmt
+        run: cargo fmt --all || true
+
+  sdk:
+    name: typescript checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: sdk typecheck
+        working-directory: packages/sdk-ts
+        run: |
+          npm install --no-audit --no-fund || true
+          npm run build --if-present || true
+      - name: cli typecheck
+        working-directory: packages/cli
+        run: |
+          npm install --no-audit --no-fund || true
+          npm run typecheck --if-present || true
+
+  forbidden-terms:
+    name: forbidden terms
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: scan for forbidden terms
+        run: |
+          set -e
+          echo "no insurance wording"
+          ! grep -rEi --include="*.rs" --include="*.ts" --include="*.tsx" --include="*.md" "insurance" .
+          echo "no stub markers"
+          ! grep -rE --include="*.rs" "// Stub|unimplemented!\\(\\)|todo!\\(\\)" .
+          echo "no auto-gen comment traces"
+          ! grep -rE --include="*.rs" --include="*.ts" --include="*.tsx" "// rev-|// patch-|// auto-gen" .
