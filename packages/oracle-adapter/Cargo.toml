@@ -1,0 +1,17 @@
+[package]
+name = "berm-oracle-adapter"
+description = "Multi-source oracle aggregation for the Berm cover protocol (Pyth + Switchboard On-Demand + Chainlink OCR2)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+
+[lib]
+name = "berm_oracle_adapter"
+path = "src/lib.rs"
+
+[dependencies]
+pyth-sdk = { workspace = true }
+thiserror = { workspace = true }
+serde = { workspace = true }
