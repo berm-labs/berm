@@ -7,3 +7,4 @@ Notable changes to BERM, newest last.
 - mention the dApp store manifest in the changelog (4)
 - trim a stale changelog note
 - log the cli transaction support in the changelog (2)
+- mention the dApp store manifest in the changelog (3)
