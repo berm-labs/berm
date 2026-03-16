@@ -8,3 +8,4 @@ Notable changes to BERM, newest last.
 - trim a stale changelog note
 - log the cli transaction support in the changelog (2)
 - mention the dApp store manifest in the changelog (3)
+- note the watch widget contract in the changelog
