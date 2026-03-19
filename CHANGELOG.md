@@ -9,3 +9,4 @@ Notable changes to BERM, newest last.
 - log the cli transaction support in the changelog (2)
 - mention the dApp store manifest in the changelog (3)
 - note the watch widget contract in the changelog
+- record the oracle divergence work in the changelog (3)
