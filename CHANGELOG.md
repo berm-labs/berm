@@ -11,3 +11,4 @@ Notable changes to BERM, newest last.
 - note the watch widget contract in the changelog
 - record the oracle divergence work in the changelog (3)
 - record the oracle divergence work in the changelog
+- tighten phrasing in the changelog
