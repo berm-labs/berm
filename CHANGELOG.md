@@ -12,3 +12,4 @@ Notable changes to BERM, newest last.
 - record the oracle divergence work in the changelog (3)
 - record the oracle divergence work in the changelog
 - tighten phrasing in the changelog
+- clarify the devnet status in the changelog
