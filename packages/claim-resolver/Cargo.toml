@@ -1,0 +1,25 @@
+[package]
+name = "berm-claim-resolver"
+description = "Berm claim resolver: automatic oracle-triggered settlement plus dispute governance and underwriter slashing (Anchor 0.31)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "berm_claim_resolver"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
+
+[dependencies]
+anchor-lang = { workspace = true }
+anchor-spl = { workspace = true }
+switchboard-on-demand = { workspace = true }
