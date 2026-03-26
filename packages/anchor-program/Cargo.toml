@@ -1,0 +1,25 @@
+[package]
+name = "berm-cover"
+description = "Berm cover executor: marketplace, cover products, policy issuance, and underwriter registry (Anchor 0.31, Solana devnet)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "berm_cover"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
+
+[dependencies]
+anchor-lang = { workspace = true }
+anchor-spl = { workspace = true }
+switchboard-on-demand = { workspace = true }
