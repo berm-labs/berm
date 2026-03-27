@@ -15,3 +15,4 @@ Notable changes to BERM, newest last.
 - clarify the devnet status in the changelog
 - log the underwriter scoring changes in the changelog
 - log the underwriter scoring changes in the changelog (2)
+- note the pool vault rework in the changelog (4)
