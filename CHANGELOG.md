@@ -14,3 +14,4 @@ Notable changes to BERM, newest last.
 - tighten phrasing in the changelog
 - clarify the devnet status in the changelog
 - log the underwriter scoring changes in the changelog
+- log the underwriter scoring changes in the changelog (2)
