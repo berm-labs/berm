@@ -16,3 +16,4 @@ Notable changes to BERM, newest last.
 - log the underwriter scoring changes in the changelog
 - log the underwriter scoring changes in the changelog (2)
 - note the pool vault rework in the changelog (4)
+- note the vault accounting change in the changelog
