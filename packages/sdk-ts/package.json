@@ -1,0 +1,44 @@
+{
+  "name": "@berm/sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for the BERM parametric DeFi cover protocol on Solana.",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "test": "vitest run --config ./vitest.config.ts",
+    "test:watch": "vitest --config ./vitest.config.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "solana",
+    "defi",
+    "cover",
+    "parametric",
+    "pyth",
+    "switchboard",
+    "anchor",
+    "berm"
+  ],
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.31.1",
+    "@solana-program/token-2022": "^0.4.1",
+    "@solana/web3.js": "^1.98.0",
+    "bn.js": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.2.0",
+    "typescript": "^5.6.0",
+    "vitest": "^4.1.8"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
