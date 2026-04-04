@@ -18,3 +18,4 @@ Notable changes to BERM, newest last.
 - note the pool vault rework in the changelog (4)
 - note the vault accounting change in the changelog
 - capture the mobile backtest work in the changelog
+- round out the changelog (2)
