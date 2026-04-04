@@ -19,3 +19,4 @@ Notable changes to BERM, newest last.
 - note the vault accounting change in the changelog
 - capture the mobile backtest work in the changelog
 - round out the changelog (2)
+- trim a stale changelog note (2)
