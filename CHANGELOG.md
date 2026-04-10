@@ -21,3 +21,4 @@ Notable changes to BERM, newest last.
 - round out the changelog (2)
 - trim a stale changelog note (2)
 - add a changelog note on the risk scoring curve
+- normalize whitespace in the changelog (3)
