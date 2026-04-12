@@ -23,3 +23,4 @@ Notable changes to BERM, newest last.
 - add a changelog note on the risk scoring curve
 - normalize whitespace in the changelog (3)
 - note the pool vault rework in the changelog (5)
+- note the sdk client work in the changelog
