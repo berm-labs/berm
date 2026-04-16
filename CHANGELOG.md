@@ -27,3 +27,4 @@ Notable changes to BERM, newest last.
 - capture the mobile backtest work in the changelog (2)
 - note the pool vault rework in the changelog (3)
 - polish wording in the changelog
+- record the anchor program contexts in the changelog
