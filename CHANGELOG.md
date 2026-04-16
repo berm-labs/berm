@@ -25,3 +25,4 @@ Notable changes to BERM, newest last.
 - note the pool vault rework in the changelog (5)
 - note the sdk client work in the changelog
 - capture the mobile backtest work in the changelog (2)
+- note the pool vault rework in the changelog (3)
