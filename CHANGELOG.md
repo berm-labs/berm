@@ -28,3 +28,4 @@ Notable changes to BERM, newest last.
 - note the pool vault rework in the changelog (3)
 - polish wording in the changelog
 - record the anchor program contexts in the changelog
+- capture the claim resolver work in the changelog
