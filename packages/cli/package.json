@@ -1,0 +1,58 @@
+{
+  "name": "berm-cli",
+  "version": "0.1.0",
+  "description": "Command line client for the Berm parametric DeFi cover protocol on Solana. Scan wallet risk, design covers, track claims, inspect pools and oracles.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "berm": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "solana",
+    "defi",
+    "cover",
+    "protection",
+    "parametric",
+    "berm",
+    "cli",
+    "anchor",
+    "pyth",
+    "switchboard"
+  ],
+  "homepage": "https://berm.sh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/berm-labs/berm.git",
+    "directory": "packages/cli"
+  },
+  "bugs": {
+    "url": "https://github.com/berm-labs/berm/issues"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "@solana/spl-token": "^0.4.9",
+    "@solana/web3.js": "^1.95.4",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "ora": "^8.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
+  }
+}
