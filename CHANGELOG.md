@@ -29,3 +29,4 @@ Notable changes to BERM, newest last.
 - polish wording in the changelog
 - record the anchor program contexts in the changelog
 - capture the claim resolver work in the changelog
+- mention the dApp store manifest in the changelog (5)
