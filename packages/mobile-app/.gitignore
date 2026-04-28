@@ -1,0 +1,13 @@
+node_modules
+.expo
+dist
+web-build
+*.log
+.DS_Store
+ios
+android
+google-services.json
+GoogleService-Info.plist
+*.keystore
+.env
+.env.local
