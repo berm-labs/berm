@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "BERM Alert",
+    "slug": "berm-alert",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "bermalert",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#2A2A2A",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0E27"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "bundleIdentifier": "sh.berm.alert",
+      "buildNumber": "1",
+      "supportsTablet": false,
+      "associatedDomains": ["applinks:berm.sh", "applinks:www.berm.sh"],
+      "infoPlist": {
+        "UIBackgroundModes": ["remote-notification"]
+      }
+    },
+    "android": {
+      "package": "sh.berm.alert",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#2A2A2A"
+      },
+      "permissions": ["POST_NOTIFICATIONS"],
+      "googleServicesFile": "./google-services.json",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            { "scheme": "https", "host": "berm.sh" },
+            { "scheme": "https", "host": "www.berm.sh" }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#5BC0EB"
+        }
+      ],
+      "expo-haptics"
+    ],
+    "extra": {
+      "apiUrl": "https://api.berm.sh",
+      "rpcUrl": "https://api.devnet.solana.com",
+      "cluster": "devnet",
+      "siteUrl": "https://berm.sh"
+    }
+  }
+}
