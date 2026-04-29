@@ -30,3 +30,4 @@ Notable changes to BERM, newest last.
 - record the anchor program contexts in the changelog
 - capture the claim resolver work in the changelog
 - mention the dApp store manifest in the changelog (5)
+- normalize whitespace in the changelog (2)
