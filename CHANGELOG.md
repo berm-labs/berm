@@ -31,3 +31,4 @@ Notable changes to BERM, newest last.
 - capture the claim resolver work in the changelog
 - mention the dApp store manifest in the changelog (5)
 - normalize whitespace in the changelog (2)
+- record the dual oracle integration in the changelog
