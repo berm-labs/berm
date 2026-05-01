@@ -1,0 +1,49 @@
+# Solana Mobile dApp Store publishing config.
+# Used by the dApp Store CLI: `npx dapp-store create publisher|app|release`.
+# Docs: https://docs.solanamobile.com/dapp-publishing/overview
+publisher:
+  name: Berm Labs
+  website: https://berm.sh
+  email: hello@berm.sh
+
+app:
+  name: BERM Alert
+  android_package: sh.berm.alert
+  urls:
+    license_url: https://berm.sh/legal
+    copyright_url: https://berm.sh/legal
+    privacy_policy_url: https://berm.sh/privacy
+    website: https://berm.sh
+
+release:
+  version: 0.1.0
+  catalog:
+    en-US:
+      name: BERM Alert
+      short_description: Real-time Solana cover status and parametric risk alerts.
+      long_description: >
+        BERM Alert tracks parametric on-chain cover across five cover types on
+        Solana: ExploitCover, DepegCover, SlashingCover, LiquidationCover and
+        OracleCover. Connect a wallet to read live position risk and receive
+        push alerts when a depeg, liquidation, claim trigger or new risk affects
+        your positions. Settlements are deterministic functions of oracle and
+        on-chain data.
+      new_in_version: First release.
+      saga_features: Mobile Wallet Adapter sign-in and push alerts.
+      tagline: Break the wave.
+
+  media:
+    - purpose: icon
+      uri: ./media/icon.png
+    - purpose: banner
+      uri: ./media/banner.png
+    - purpose: screenshot
+      uri: ./media/screenshot-home.png
+    - purpose: screenshot
+      uri: ./media/screenshot-alerts.png
+
+solana_mobile_dapp_publisher_portal:
+  google_store_package: sh.berm.alert
+
+# Solana account that signs the on-chain publishing NFTs is supplied at publish
+# time via the CLI keypair flag, never committed here.
