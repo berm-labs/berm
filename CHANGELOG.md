@@ -32,3 +32,4 @@ Notable changes to BERM, newest last.
 - mention the dApp store manifest in the changelog (5)
 - normalize whitespace in the changelog (2)
 - record the dual oracle integration in the changelog
+- normalize whitespace in the changelog
