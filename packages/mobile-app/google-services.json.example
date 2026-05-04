@@ -1,0 +1,28 @@
+{
+  "project_info": {
+    "project_number": "REPLACE_WITH_FCM_SENDER_ID",
+    "project_id": "berm-alert",
+    "storage_bucket": "berm-alert.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "REPLACE_WITH_FIREBASE_APP_ID",
+        "android_client_info": {
+          "package_name": "sh.berm.alert"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "REPLACE_WITH_ANDROID_API_KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
