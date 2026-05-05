@@ -34,3 +34,4 @@ Notable changes to BERM, newest last.
 - record the dual oracle integration in the changelog
 - normalize whitespace in the changelog
 - record the oracle divergence work in the changelog (2)
+- round out the changelog
