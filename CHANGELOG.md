@@ -36,3 +36,4 @@ Notable changes to BERM, newest last.
 - record the oracle divergence work in the changelog (2)
 - round out the changelog
 - log the underwriter scoring changes in the changelog (3)
+- mention the dApp store manifest in the changelog
