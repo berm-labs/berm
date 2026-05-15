@@ -38,3 +38,4 @@ Notable changes to BERM, newest last.
 - log the underwriter scoring changes in the changelog (3)
 - mention the dApp store manifest in the changelog
 - note the sdk client work in the changelog (3)
+- mention the dApp store manifest in the changelog (2)
