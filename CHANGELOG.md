@@ -40,3 +40,4 @@ Notable changes to BERM, newest last.
 - note the sdk client work in the changelog (3)
 - mention the dApp store manifest in the changelog (2)
 - note the pool vault rework in the changelog
+- record the anchor program contexts in the changelog (2)
