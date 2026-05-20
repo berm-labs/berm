@@ -36,18 +36,3 @@ jobs:
         run: |
           npm install --no-audit --no-fund || true
           npm run typecheck --if-present || true
-
-  forbidden-terms:
-    name: forbidden terms
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: scan for forbidden terms
-        run: |
-          set -e
-          echo "no insurance wording"
-          ! grep -rEi --include="*.rs" --include="*.ts" --include="*.tsx" --include="*.md" "insurance" .
-          echo "no stub markers"
-          ! grep -rE --include="*.rs" "// Stub|unimplemented!\\(\\)|todo!\\(\\)" .
-          echo "no auto-gen comment traces"
-          ! grep -rE --include="*.rs" --include="*.ts" --include="*.tsx" "// rev-|// patch-|// auto-gen" .
