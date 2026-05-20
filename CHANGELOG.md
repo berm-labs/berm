@@ -43,3 +43,4 @@ Notable changes to BERM, newest last.
 - record the anchor program contexts in the changelog (2)
 - note the sdk client work in the changelog (2)
 - log the cli transaction support in the changelog
+- document the supported clusters in the changelog
