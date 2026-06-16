@@ -8,7 +8,7 @@
 [![Stars](https://img.shields.io/github/stars/berm-labs/berm?style=flat-square&labelColor=2A2A2A&color=FFD93D)](https://github.com/berm-labs/berm/stargazers)
 [![Rust](https://img.shields.io/badge/Rust-1.78%2B-D4AF37?style=flat-square&labelColor=2A2A2A)](https://www.rust-lang.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.4%2B-5BC0EB?style=flat-square&labelColor=2A2A2A)](https://www.typescriptlang.org/)
-[![Solana](https://img.shields.io/badge/Solana-devnet-5A6B7C?style=flat-square&labelColor=2A2A2A)](https://docs.solana.com/)
+[![Solana](https://img.shields.io/badge/Solana-mainnet-5A6B7C?style=flat-square&labelColor=2A2A2A)](https://docs.solana.com/)
 
 > **CA**
 > **CLDBh5rHpc7gVAs8jSJtQ7KCqvjdfVbvfvM3omCpump**
@@ -115,7 +115,7 @@ berm oracle status                    # show Pyth/Switchboard health
 berm claim --id <CLAIM_ID>            # check claim auto-trigger status
 ```
 
-Defaults to `https://api.berm.sh` and the devnet RPC `https://api.devnet.solana.com`. Override the cluster with `--cluster`, or the endpoints with `--api` and `--rpc`. No secrets ever required.
+Defaults to `https://api.berm.sh` and the public mainnet RPC `https://api.mainnet-beta.solana.com`. Override the cluster with `--cluster`, or the endpoints with `--api` and `--rpc`. No secrets ever required.
 
 ---
 
@@ -135,7 +135,15 @@ See [`docs/cover-spec.md`](docs/cover-spec.md) for full trigger predicates and p
 
 ## Cluster
 
-BERM currently runs on **Solana devnet** while final review and integration work continues. The program ID is published in `target/idl/berm.json` after `anchor deploy --provider.cluster devnet`. Mainnet promotion is gated on additional review and is announced in advance via @berm_sh.
+BERM is live on **Solana mainnet**. The three on-chain programs are deployed at:
+
+| Program | Address | Explorer |
+|---------|---------|----------|
+| Cover executor | `AMenBCW8sgtx2VriEYzdJkTCsUBF6FGQy8PhcNh9p7pH` | [view](https://explorer.solana.com/address/AMenBCW8sgtx2VriEYzdJkTCsUBF6FGQy8PhcNh9p7pH) |
+| Pool vault | `H4ifx5HYeHHvEuyJMdF1EpRSeNZJqRf3Vkhi4LT8N12T` | [view](https://explorer.solana.com/address/H4ifx5HYeHHvEuyJMdF1EpRSeNZJqRf3Vkhi4LT8N12T) |
+| Claim resolver | `GnS9Sii7PpELXQLyKwZRgrEpqma3GQwcSxtqNdCMmkk3` | [view](https://explorer.solana.com/address/GnS9Sii7PpELXQLyKwZRgrEpqma3GQwcSxtqNdCMmkk3) |
+
+The same program IDs are published in `target/idl/berm.json` after `anchor deploy --provider.cluster mainnet`. Program upgrades are announced in advance via @berm_sh.
 
 ---
 

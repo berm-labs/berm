@@ -44,3 +44,4 @@ Notable changes to BERM, newest last.
 - note the sdk client work in the changelog (2)
 - log the cli transaction support in the changelog
 - document the supported clusters in the changelog
+- deployed to Solana mainnet (2026-06-17) -- cover executor AMenBCW8sgtx2VriEYzdJkTCsUBF6FGQy8PhcNh9p7pH, pool vault H4ifx5HYeHHvEuyJMdF1EpRSeNZJqRf3Vkhi4LT8N12T, claim resolver GnS9Sii7PpELXQLyKwZRgrEpqma3GQwcSxtqNdCMmkk3

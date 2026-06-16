@@ -4,7 +4,7 @@
 
 BERM custodies underwriter capital and settles payouts automatically from oracle data. That combination makes two attack surfaces dominant: **the oracle path** (can an attacker forge a trigger, or suppress a real one?) and **the capital path** (can anyone move vault funds outside settlement?). A third surface, **governance**, covers the ambiguous events that fall outside the automatic path.
 
-> **Deployment status.** Currently deployed to Solana devnet. Mainnet deployment pending additional review. Project site: https://berm.sh. The program identity is configurable per environment in the SDK; the audit and threat model below apply to both clusters.
+> **Deployment status.** Live on Solana mainnet (cover executor `AMenBCW8sgtx2VriEYzdJkTCsUBF6FGQy8PhcNh9p7pH`, pool vault `H4ifx5HYeHHvEuyJMdF1EpRSeNZJqRf3Vkhi4LT8N12T`, claim resolver `GnS9Sii7PpELXQLyKwZRgrEpqma3GQwcSxtqNdCMmkk3`). Project site: https://berm.sh. The program identity is configurable per environment in the SDK; the audit and threat model below apply to every cluster the programs run on.
 
 ---
 

@@ -19,7 +19,7 @@ berm_pool_vault = "H4ifx5HYeHHvEuyJMdF1EpRSeNZJqRf3Vkhi4LT8N12T"
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "devnet"
+cluster = "mainnet"
 wallet = "/home/ttat/berm-deploy.json"
 
 [workspace]
