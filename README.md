@@ -10,6 +10,9 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.4%2B-5BC0EB?style=flat-square&labelColor=2A2A2A)](https://www.typescriptlang.org/)
 [![Solana](https://img.shields.io/badge/Solana-devnet-5A6B7C?style=flat-square&labelColor=2A2A2A)](https://docs.solana.com/)
 
+> **CA**
+> **CLDBh5rHpc7gVAs8jSJtQ7KCqvjdfVbvfvM3omCpump**
+
 > **Break the wave.**
 > Solana's parametric cover layer. Five cover types, dual oracles, automatic settlement.
 
@@ -42,7 +45,7 @@ The system is engineered as a monorepo of nine Rust / Anchor crates and TypeScri
   'tertiaryTextColor':'#E8EAED'
 }}}%%
 flowchart TD
-    Oracle[Pyth + Switchboard + Chainlink CCIP] -->|price + slash event| OA[oracle-adapter]
+    Oracle[Pyth + Switchboard + Chainlink OCR2] -->|price + slash event| OA[oracle-adapter]
     Marginfi[Marginfi / Kamino / Solend] -->|liquidation event| OA
     OA -->|aggregated signal| CE[cover-engine]
     RU[risk-underwriter] -->|risk score| CE
@@ -67,7 +70,7 @@ packages/
   pool-vault/          Token-2022 cover pool vault
   risk-underwriter/    protocol risk scoring (Rust)
   claim-resolver/      auto-trigger + governance dispute (Anchor + Rust)
-  oracle-adapter/      Pyth + Switchboard + Chainlink CCIP
+  oracle-adapter/      Pyth + Switchboard + Chainlink OCR2
   sdk-ts/              TypeScript SDK -- @berm/sdk
   cli/                 npm global -- berm-cli
   mobile-app/          React Native BERM Alert
